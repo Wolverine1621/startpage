@@ -3,7 +3,7 @@ var apiKey = getCookie("apiKey")
 
 console.log("username: " + username)
 
-var apiUrl = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + username + '&api_key=' + apiKey + '&format=json&limit=1'
+var apiUrl = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + username + '&api_key=' + apiKey + '&format=json&limit=1'
 
 $.getJSON(apiUrl, function(data) {
     var musicString = data.recenttracks.track[0].artist['#text'] + " - " + data.recenttracks.track[0].name
