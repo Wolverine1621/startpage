@@ -1,4 +1,9 @@
-function setCookie(cname, cvalue, exdays) {
+var local = false;
+
+if (local) {
+  throw new Error("Development")
+} else {
+  function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
@@ -34,8 +39,7 @@ if (checkUsername === "") {
 if (checkApiKey === "") {
     checkApiKey = prompt("Enter your LastFM API Key (Note: API Keys are stored on the user's machine ONLY):", "")
     setCookie("apiKey", checkApiKey, 4000)
-}
+}}
 
-console.log(getCookie("username"))
-console.log(getCookie("apiKey"))
+
 

@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#centerbox {
+    text-align: center;
+    height: 100vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background-color: #262626;
+    border: 5px solid #111111;
+    color: white;
+    font-family: Montserrat;
+    font-size: 72px;
+
+    padding: 20px;
+}
+
+#lastfm {
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+}
