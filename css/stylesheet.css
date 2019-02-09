@@ -1,6 +1,19 @@
+:root {
+    --color1: white;
+    --color2: white;
+    --color3: white;
+    --color4: white;
+    --bordercolor: #111111;
+}
+
 body {
     margin: 0;
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 #centerbox {
@@ -11,20 +24,77 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: white;
+    font-family: Montserrat;
 }
 
-h1 {
+#links{
+    margin: 5px;
+    border-spacing: 10px;
+}
+
+#bg {
+    display: inline-block;
     background-color: #262626;
-    border: 5px solid #111111;
-    color: white;
-    font-family: Montserrat;
-    font-size: 72px;
-
-    padding: 20px;
+    border: 5px solid;
+    border-color: var(--bordercolor);
 }
 
-#lastfm {
-    color: white;
-    font-family: Montserrat;
-    font-size: 12px;
+#bg td {
+    padding: 10px;
+}
+
+
+/* Custom Colors */
+#r1 td a:hover {
+    color: var(--color1);
+}
+
+#r2 td a:hover {
+    color: var(--color2);
+}
+
+#r3 td a:hover {
+    color: var(--color3);
+}
+
+#r4 td a:hover {
+    color: var(--color4);
+}
+
+#color1 {
+    color: var(--color1);
+    float: left;
+}
+
+#color2 {
+    color: var(--color2);
+    float: left;
+}
+
+#color3 {
+    color: var(--color3);
+    float: left;
+}
+
+#color4 {
+    color: var(--color4);
+    float: left;
+}
+
+#header1 {
+    border-right: 3px solid var(--color1);
+}
+
+#header2 {
+    border-right: 3px solid var(--color2);
+}
+
+#header3 {
+    border-right: 3px solid var(--color3);
+}
+
+#header4 {
+    border-right: 3px solid var(--color4);
 }
