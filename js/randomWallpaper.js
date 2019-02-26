@@ -14,9 +14,22 @@ var colors = [
     ["#eaa610", "#91b348", "#2c8b95", "#77b9a6", "#63672b"]
 ]
 
+var bw = [
+    "white",
+    "white",
+    "white",
+    "white",
+    "black",
+    "black",
+    "white",
+    "black",
+    "black",
+]
+
 let root = document.documentElement
 root.style.setProperty("--color1", colors[wallpaperNumber][0])
 root.style.setProperty("--color2", colors[wallpaperNumber][1])
 root.style.setProperty("--color3", colors[wallpaperNumber][2])
 root.style.setProperty("--color4", colors[wallpaperNumber][3])
 root.style.setProperty("--bordercolor", colors[wallpaperNumber][4])
+root.style.setProperty("--othercolor", bw[wallpaperNumber])

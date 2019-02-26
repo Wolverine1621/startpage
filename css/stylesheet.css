@@ -4,6 +4,7 @@
     --color3: white;
     --color4: white;
     --bordercolor: #111111;
+    --othercolor: black;
 }
 
 body {
@@ -24,9 +25,23 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     color: white;
     font-family: Montserrat;
+}
+
+#clock {
+    text-align: right;
+    color: var(--othercolor);
+    font-family: Montserrat;
+    margin-left: auto;
+    margin-bottom: 0px;
+    
+}
+
+#container {
+    display: inline-block;
 }
 
 #links{
