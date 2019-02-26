@@ -16,11 +16,51 @@ a {
     text-decoration: none;
     color: white;
 }
+/*
+h3 {
+    margin: 0px;
+}
+
+#header {
+    display: inline-block;
+    width: 100vw;
+}
+
+#weather {
+    margin: 0px;
+    float: left;
+
+   
+    font-family: Montserrat;
+    text-align: center;
+    color: var(--othercolor);
+    padding: 20px;
+}
+
+#music {
+    float: right;
+    margin: 0px;
+    padding: 20px;
+
+    font-family: Montserrat;
+    text-align: center;
+    color: var(--othercolor);
+    padding: 20px;
+}
+
+#albumArt {
+    border-radius: 50%
+}
+
+#weatherDesc, #temp, #icon1, #albumArt, lastfm {
+    margin: 0px;
+}*/
 
 #centerbox {
     text-align: center;
     height: 100vh;
-
+    z-index: 0;
+    /*margin-top: -158px;*/
 
     display: flex;
     align-items: center;
