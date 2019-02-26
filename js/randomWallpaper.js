@@ -1,4 +1,4 @@
-var wallpaperNumber = Math.floor(Math.random() * 9)
+var wallpaperNumber = Math.floor(Math.random() * 15)
 
 document.body.style.backgroundImage = "url('resources/" + wallpaperNumber + ".png')"
 
@@ -11,7 +11,13 @@ var colors = [
     ["#f38bd3", "#8f6bb3", "#1d8874", "#81e699", "#4e427e"],
     ["#820a01", "#c6370c", "#866a4a", "#adc7aa", "#411808"],
     ["#7d58d2", "#614cb8", "#d76fb8", "#9d4b86", "#52336a"],
-    ["#eaa610", "#91b348", "#2c8b95", "#77b9a6", "#63672b"]
+    ["#eaa610", "#91b348", "#2c8b95", "#77b9a6", "#63672b"],
+    ["#a35229", "#523a33", "#bdc2b9", "#8a857c", "1d1f26"],
+    ["#f9267b", "#7f4d7e", "#fbb487", "#13f1dc", " #4a3e6e"],
+    ["#9dabdf", "#cdb1d3", "#4b633c", "#f5ebe1", "#e0d2e1"],
+    ["#c74369", "#782c46", "#df83b0", "#575a9a", "#f3d1eb"],
+    ["#8c3ddb", "#499ee5", "#72befe", "#47b372", "#8c3ddb"],
+    ["#f1d687", "#d45d44", "#4c6ea3", "#80b3b3", "#493a4d"]
 ]
 
 var bw = [
@@ -24,6 +30,12 @@ var bw = [
     "white",
     "black",
     "black",
+    "black",
+    "white",
+    "black",
+    "white",
+    "white",
+    "white"
 ]
 
 let root = document.documentElement
